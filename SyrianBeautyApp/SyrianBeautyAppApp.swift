@@ -6,12 +6,21 @@
 //
 
 import SwiftUI
+import FirebaseCore
 
 @main
 struct SyrianBeautyAppApp: App {
+    @StateObject private var authService = AuthService()
+
+    init() {
+        FirebaseApp.configure()
+    }
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView() // ✅ استخدم LoginView مباشرة
+                .environmentObject(authService)
         }
     }
 }
+

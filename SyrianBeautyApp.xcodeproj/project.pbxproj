@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		539D70452DF2DDEA00F47767 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 539D70442DF2DDEA00F47767 /* GoogleService-Info.plist */; };
+		539D70482DF2E08A00F47767 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 539D70472DF2E08A00F47767 /* FirebaseAuth */; };
+		539D704A2DF2E08A00F47767 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 539D70492DF2E08A00F47767 /* FirebaseFirestore */; };
+		539D704C2DF2E08A00F47767 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 539D704B2DF2E08A00F47767 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		539D6FC72DF2D2B100F47767 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +34,7 @@
 		539D6FB92DF2D2AE00F47767 /* SyrianBeautyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyrianBeautyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		539D6FC62DF2D2B100F47767 /* SyrianBeautyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyrianBeautyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		539D6FD02DF2D2B100F47767 /* SyrianBeautyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyrianBeautyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		539D70442DF2DDEA00F47767 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539D70482DF2E08A00F47767 /* FirebaseAuth in Frameworks */,
+				539D704A2DF2E08A00F47767 /* FirebaseFirestore in Frameworks */,
+				539D704C2DF2E08A00F47767 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +90,7 @@
 				539D6FC92DF2D2B100F47767 /* SyrianBeautyAppTests */,
 				539D6FD32DF2D2B100F47767 /* SyrianBeautyAppUITests */,
 				539D6FBA2DF2D2AE00F47767 /* Products */,
+				539D70442DF2DDEA00F47767 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +124,9 @@
 			);
 			name = SyrianBeautyApp;
 			packageProductDependencies = (
+				539D70472DF2E08A00F47767 /* FirebaseAuth */,
+				539D70492DF2E08A00F47767 /* FirebaseFirestore */,
+				539D704B2DF2E08A00F47767 /* FirebaseStorage */,
 			);
 			productName = SyrianBeautyApp;
 			productReference = 539D6FB92DF2D2AE00F47767 /* SyrianBeautyApp.app */;
@@ -195,6 +210,9 @@
 			);
 			mainGroup = 539D6FB02DF2D2AE00F47767;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				539D70462DF2E08A00F47767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 539D6FBA2DF2D2AE00F47767 /* Products */;
 			projectDirPath = "";
@@ -212,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				539D70452DF2DDEA00F47767 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +414,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22PAF2646W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -422,6 +442,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 22PAF2646W;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -550,6 +571,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		539D70462DF2E08A00F47767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		539D70472DF2E08A00F47767 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 539D70462DF2E08A00F47767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		539D70492DF2E08A00F47767 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 539D70462DF2E08A00F47767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		539D704B2DF2E08A00F47767 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 539D70462DF2E08A00F47767 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 539D6FB12DF2D2AE00F47767 /* Project object */;
 }
